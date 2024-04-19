@@ -21,7 +21,7 @@
             {% endif %} {% for page_num in paginator.page_range %} {% if page_obj.number == page_num %}
             <li class="page-item active">
                 <span class="page-link">
-                {{ page num }}
+                {{ page_num }}
                 <span class="sr-only">(current)</span>
                 </span>
             </li>
@@ -51,3 +51,4 @@
     <div class="fw-normal small mt-4 mt-lg-0">Showing <b>{{object_list.count}}</b> out of
     <b>{{paginator.count}}</b> entries</div>
 </div>
+{% endif %}
