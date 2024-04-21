@@ -45,5 +45,11 @@ class MemberCreateView(CreateView):
     template_name = 'member_add.html'
     success_url = reverse_lazy('member-list')
 
+class MemberUpdateView(UpdateView):
+    model = OrgMember
+    form_class = MemberForm
+    template_name = 'member_edit.html'
+    success_url = reverse_lazy('member-list')
+
     
 # Create your views here.
